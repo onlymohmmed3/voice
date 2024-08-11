@@ -1,3 +1,10 @@
+const schedule = require('node-schedule');
+
+const restartJob = schedule.scheduleJob('*/30 * * * *', function() {
+    console.log('Restarting the project...');
+    // إضافة الكود الخاص بإعادة تشغيل البرنامج هنا
+});
+
 const { Client } = require('discord.js-selfbot-v13');
 const client = new Client(); 
 
